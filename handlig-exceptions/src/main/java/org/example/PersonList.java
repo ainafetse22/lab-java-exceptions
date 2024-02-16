@@ -50,6 +50,7 @@ public class PersonList {
         try {
             FileWriter fileWriter = new FileWriter(file_name, false);
             fileWriter.write(person_line);
+            fileWriter.close();
         }
         catch (IOException e){
             e.printStackTrace();
